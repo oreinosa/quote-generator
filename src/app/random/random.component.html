@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-12 col-md-6 mx-auto">
+    <!-- <mat-card > -->
+    <button (click)='getQuote()' mat-raised-button class="font-medium col-12 mx-auto py-3">
+      Generate a random quote
+    </button>
+    <!-- </mat-card> -->
+  </div>
+  <div class="col-12 my-3">
+    <ng-container *ngIf='randomQuote$ | async as quote;else loadingQuote'>
+      <app-quote [quote]='quote'></app-quote>
+    </ng-container>
+    <ng-template #loadingQuote>
+      <mat-spinner class="mx-auto"></mat-spinner>
+    </ng-template>
+  </div>
+</div>

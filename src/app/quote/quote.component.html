@@ -1,0 +1,28 @@
+<ng-container *ngIf='quote'>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        {{quote.author}}
+        ({{ !!quote.authorDeath ? (quote.authorBirth + " to " +quote.authorDeath) : ("born "+quote.authorBirth) }})
+      </mat-card-title>
+      <mat-card-subtitle>
+        <ng-container *ngIf='quote?.nationality'>
+          {{ quote.nationality }}
+          <ng-container *ngIf='quote?.profession'>
+            ,
+          </ng-container>
+        </ng-container>
+        <ng-container *ngIf='quote?.profession'>
+          {{ quote.profession }}
+        </ng-container>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class='my-3'>
+      <p class='font-medium text-center'>"{{ quote.message }}"</p>
+      <p *ngIf='quote?.keywords'>Keywords: <br><i>{{ quote.keywords }}</i></p>
+    </mat-card-content>
+    <!-- <ng-container *ngIf='loading'>
+    <mat-spinner class="mx-auto"></mat-spinner>
+  </ng-container> -->
+  </mat-card>
+</ng-container>

@@ -1,0 +1,79 @@
+[debug] [2020-02-20T19:30:47.556Z] ----------------------------------------------------------------------
+[debug] [2020-02-20T19:30:47.560Z] Command:       /usr/bin/node /usr/bin/firebase serve --only functions
+[debug] [2020-02-20T19:30:47.561Z] CLI Version:   7.13.1
+[debug] [2020-02-20T19:30:47.561Z] Platform:      linux
+[debug] [2020-02-20T19:30:47.561Z] Node Version:  v12.13.1
+[debug] [2020-02-20T19:30:47.561Z] Time:          Thu Feb 20 2020 13:30:47 GMT-0600 (Central Standard Time)
+[debug] [2020-02-20T19:30:47.561Z] ----------------------------------------------------------------------
+[debug] [2020-02-20T19:30:47.561Z] 
+[debug] [2020-02-20T19:30:47.567Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-20T19:30:47.567Z] > authorizing via signed-in user
+[debug] [2020-02-20T19:30:47.567Z] [iam] checking project the-quote-generator for permissions ["firebase.projects.get"]
+[debug] [2020-02-20T19:30:47.569Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/the-quote-generator:testIamPermissions  
+
+[debug] [2020-02-20T19:30:48.185Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-20T19:30:48.187Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/the-quote-generator  
+ 
+[debug] [2020-02-20T19:30:48.853Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/home/oreinosa/programming/quote-generator-app/functions" for Cloud Functions...
+[debug] [2020-02-20T19:30:48.892Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-20T19:30:48.892Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-20T19:30:48.892Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-20T19:30:48.893Z] [worker-~diagnostic~-5acb8e56-faec-4d54-b9ab-e8cf9905e57d]: Assigning socketPath: /tmp/fire_emu_6278.sock
+[debug] [2020-02-20T19:30:48.893Z] [worker-~diagnostic~-5acb8e56-faec-4d54-b9ab-e8cf9905e57d]: BUSY
+[debug] [2020-02-20T19:30:49.153Z] [runtime-status] [6278] Functions runtime initialized. {"cwd":"/home/oreinosa/programming/quote-generator-app/functions","node_version":"12.13.1"}
+[debug] [2020-02-20T19:30:49.155Z] [runtime-status] [6278] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-20T19:30:49.155Z] [runtime-status] [6278] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/oreinosa/programming/quote-generator-app/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T19:30:49.156Z] [runtime-status] [6278] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/oreinosa/programming/quote-generator-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T19:30:49.162Z] [runtime-status] [6278] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/oreinosa/programming/quote-generator-app/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[quotes]: http function initialized (http://localhost:5000/the-quote-generator/us-central1/quotes).
+[info] ✔  functions[words]: http function initialized (http://localhost:5000/the-quote-generator/us-central1/words).
+[debug] [2020-02-20T19:30:49.305Z] [worker-~diagnostic~-5acb8e56-faec-4d54-b9ab-e8cf9905e57d]: IDLE
+[debug] [2020-02-20T19:31:15.097Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-20T19:31:15.099Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-20T19:31:15.100Z] Accepted request GET /the-quote-generator/us-central1/quotes/author/qweqww --> quotes
+[debug] [2020-02-20T19:31:15.114Z] [worker-pool] addWorker(quotes)
+[debug] [2020-02-20T19:31:15.115Z] [worker-pool] Adding worker with key quotes, total=1
+[debug] [2020-02-20T19:31:15.115Z] [worker-pool] submitWork(triggerId=quotes)
+[debug] [2020-02-20T19:31:15.115Z] [worker-quotes-cb454ce3-11fe-4caf-93ef-952b7ba6e205]: Assigning socketPath: /tmp/fire_emu_6294.sock
+[debug] [2020-02-20T19:31:15.115Z] [worker-quotes-cb454ce3-11fe-4caf-93ef-952b7ba6e205]: BUSY
+[debug] [2020-02-20T19:31:15.400Z] [runtime-status] [6294] Functions runtime initialized. {"cwd":"/home/oreinosa/programming/quote-generator-app/functions","node_version":"12.13.1"}
+[debug] [2020-02-20T19:31:15.406Z] [runtime-status] [6294] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-20T19:31:15.406Z] [runtime-status] [6294] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/oreinosa/programming/quote-generator-app/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T19:31:15.407Z] [runtime-status] [6294] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/oreinosa/programming/quote-generator-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T19:31:15.407Z] [runtime-status] [6294] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/oreinosa/programming/quote-generator-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T19:31:15.531Z] [runtime-status] [6294] Trigger "quotes" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "quotes"
+[debug] [2020-02-20T19:31:15.532Z] [runtime-status] [6294] triggerDefinition {"httpsTrigger":{},"name":"quotes","entryPoint":"quotes"}
+[debug] [2020-02-20T19:31:15.532Z] [runtime-status] [6294] Running quotes in mode HTTPS
+[debug] [2020-02-20T19:31:15.534Z] [runtime-status] [6294] Attempting to listen to socketPath: /tmp/fire_emu_6294.sock
+[debug] [2020-02-20T19:31:15.548Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-20T19:31:15.558Z] [runtime-status] [6294] Ephemeral server handling GET request
+[info] >  searching for qweqww
+[debug] [2020-02-20T19:31:15.581Z] [runtime-status] [6294] Ephemeral server survived.
+[info] >  undefined
+[info] i  functions: Finished "quotes" in ~1s
+[debug] [2020-02-20T19:31:17.488Z] [worker-quotes-cb454ce3-11fe-4caf-93ef-952b7ba6e205]: IDLE
+[debug] [2020-02-20T19:31:17.489Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-20T19:33:06.210Z] File /home/oreinosa/programming/quote-generator-app/functions/src/quotes.ts changed, reloading triggers
+[debug] [2020-02-20T19:33:07.212Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-02-20T19:33:07.217Z] [worker-~diagnostic~-5acb8e56-faec-4d54-b9ab-e8cf9905e57d]: FINISHING
+[debug] [2020-02-20T19:33:07.218Z] [worker-pool] Shutting down IDLE worker (quotes)
+[debug] [2020-02-20T19:33:07.218Z] [worker-quotes-cb454ce3-11fe-4caf-93ef-952b7ba6e205]: FINISHING
+[debug] [2020-02-20T19:33:07.243Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-20T19:33:07.243Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-20T19:33:07.244Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-20T19:33:07.244Z] [worker-~diagnostic~-c34c70f1-8b98-42e6-883c-0deb7dbe4ad9]: Assigning socketPath: /tmp/fire_emu_6337.sock
+[debug] [2020-02-20T19:33:07.245Z] [worker-~diagnostic~-c34c70f1-8b98-42e6-883c-0deb7dbe4ad9]: BUSY
+[debug] [2020-02-20T19:33:07.251Z] [worker-~diagnostic~-5acb8e56-faec-4d54-b9ab-e8cf9905e57d]: exited
+[debug] [2020-02-20T19:33:07.251Z] [worker-~diagnostic~-5acb8e56-faec-4d54-b9ab-e8cf9905e57d]: FINISHED
+[debug] [2020-02-20T19:33:07.252Z] [worker-quotes-cb454ce3-11fe-4caf-93ef-952b7ba6e205]: exited
+[debug] [2020-02-20T19:33:07.252Z] [worker-quotes-cb454ce3-11fe-4caf-93ef-952b7ba6e205]: FINISHED
+[debug] [2020-02-20T19:33:07.545Z] [runtime-status] [6337] Functions runtime initialized. {"cwd":"/home/oreinosa/programming/quote-generator-app/functions","node_version":"12.13.1"}
+[debug] [2020-02-20T19:33:07.546Z] [runtime-status] [6337] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-20T19:33:07.548Z] [runtime-status] [6337] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/oreinosa/programming/quote-generator-app/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-20T19:33:07.548Z] [runtime-status] [6337] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/oreinosa/programming/quote-generator-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T19:33:07.549Z] [runtime-status] [6337] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/oreinosa/programming/quote-generator-app/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-20T19:33:07.639Z] [worker-~diagnostic~-c34c70f1-8b98-42e6-883c-0deb7dbe4ad9]: IDLE

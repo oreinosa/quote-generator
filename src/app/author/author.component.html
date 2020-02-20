@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-12 col-md-6 mx-auto">
+    <mat-card>
+      <p mat-button class="font-medium">
+        Get a quote searching by author
+      </p>
+      <mat-form-field class='full-width'>
+        <mat-label>Author name</mat-label>
+        <input matInput type="text" [(ngModel)]='author' name='author' #authorCtrl='ngModel'
+          (keyup.enter)='authorCtrl.valid ? setQuote(author) : false' required>
+      </mat-form-field>
+      <button mat-button type='submit' (click)='setQuote(author)' [disabled]='authorCtrl.invalid || loading'>
+        Search
+      </button>
+    </mat-card>
+  </div>
+  <div class="col-12 my-3">
+    <app-quote [quote]='quote$ | async'></app-quote>
+  </div>
+</div>

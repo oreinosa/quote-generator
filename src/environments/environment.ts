@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  wordsAPI: "http://localhost:5000/the-quote-generator/us-central1/quotes"
 };
 
 /*
